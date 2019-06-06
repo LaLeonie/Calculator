@@ -4,20 +4,21 @@
     <title>Calculator</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href=css/stylesheet.css />
+    <script src="js/javascript.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <p class="quote">
+      <!-- <p class="quote">
         "All which is beautiful and noble is the result of reason and
         calculation."
       </p>
-      <p class="author">Charles Baudelaire</p>
+      <p class="author">Charles Baudelaire</p> -->
 
-      <div class="calculator">
+      <div class="calculator" data-operator="" data-firstValue="">
         <div class="display">0</div>
-        <div class="keys">
+        <div class="calculator__keys">
           <button class="key-operator" data-action="add">+</button>
-          <button class="key-operator" data-action="substract">-</button>
+          <button class="key-operator" data-action="subtract">-</button>
           <button class="key-operator" data-action="multiply">&times;</button>
           <button class="key-operator" data-action="divide">÷</button>
           <button>7</button>
@@ -32,7 +33,9 @@
           <button>0</button>
           <button data-action="decimal">.</button>
           <button data-action="clear">AC</button>
-          <button class="key-equal" data-action="calculate">=</button>
+          <button class="key-equal" data-action="calculate" id="equals">
+            =
+          </button>
         </div>
       </div>
     </div>
